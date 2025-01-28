@@ -133,3 +133,18 @@ most_expensive = max(base_prices, key=lambda item: item[1])
 least_expensive = min(base_prices, key=lambda item: item[1])
 print( most_expensive)
 print(least_expensive)
+
+#program for Write a function summarize_items that performs the following:
+#Accepts at least one positional argument, which is the name of the person.
+#Accepts an arbitrary number of items (e.g., integers, strings, etc.) using *args.
+#Accepts arbitrary keyword arguments (e.g., metadata like date or location) using **kwargs.
+#The function should:
+#Print the person’s name.
+#Print the total number of items passed via *args.
+# Return a dict with all items in keywards args
+
+def my_function(name,*arg,**kwargs):
+  print(name)
+  print(len(arg))
+  print(kwargs)
+my_function("pavan",1,id=1,full_name="pavan")
